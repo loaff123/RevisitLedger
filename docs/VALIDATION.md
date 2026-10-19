@@ -3,7 +3,26 @@
 Candidate version: 0.1.0. Measurements use authored conformance fixtures and separately
 generated synthetic inputs; no production crawl has been qualified.
 
-## Verified candidate
+## Hosted source verification (2026-10-19)
+
+The public source-only alpha at commit
+[ba1fb885ba0d18f12081e30966d5229970265061](https://github.com/loaff123/RevisitLedger/commit/ba1fb885ba0d18f12081e30966d5229970265061)
+passed [GitHub Actions run 39207286945](https://github.com/loaff123/RevisitLedger/actions/runs/39207286945)
+on Ubuntu 24.04 x86-64 with Temurin 17.0.20+1 and 21.0.12+1, and Python 3.12.15.
+Both matrix jobs passed:
+
+- Maven verify: 242 Java tests, zero failures/errors/skips
+- Python discovery: 40 passed; one optional acquisition-cache inventory test skipped
+- Independent known-byte, expectation-projection and graph-oracle checks
+- Package creation with locked runtime dependency hashes
+- All 15 packaged CLI checks outside the checkout, with unchanged input hashes
+
+This verifies Java 17 runtime behavior for the tested cases. The large synthetic
+measurements below remain the earlier Linux/OpenJDK 21 observations; they were not
+rerun on Java 17. CI builds packages for verification only; no prebuilt release or
+Maven Central artifact is published.
+
+## Verified candidate before publication
 
 - Offline Maven verify: 242 Java tests, zero failures/errors/skips
 - Same full Maven suite from an extracted source distribution outside the checkout:
@@ -37,11 +56,11 @@ No build cache, internal working log or machine-specific configuration is shippe
 - Build tools: Apache Maven 3.10.0 and OpenJDK 21.0.2
 - Python checks/qualification: Python 3.12.14
 - Build source/target: Java 17 (--release 17), with classfile-major checks
-- Java 17 runtime: not installed, not run
+- Java 17 runtime: verified by the hosted suite above; original local qualification used Java 21
 - Windows/macOS/other CPU/native-library combinations: not run
 - Network dependency downloads: unnecessary for the bundled runtime
 - OS-level network namespace isolation: unavailable; unshare -n was denied
-- GitHub Actions configuration: provided, not run on hosted infrastructure
+- GitHub Actions: complete hosted Java 17/21 suite passed, as linked above
 - Representative production archive: not available, not run
 
 Offline Maven dependency reuse and bundled-runtime execution do not prove OS-enforced

@@ -9,13 +9,30 @@ whole-file dependency plans, and explains saved reports. Its scope is supported
 revisit payload dependencies. A complete plan is not proof of archive authenticity,
 a fully valid WARC collection, website replayability, or a minimum-size file set.
 
+## Build the source-only alpha
+
+This repository publishes source, tests, fixtures and documentation. No prebuilt
+release or Maven Central package is published. To create a runnable distribution,
+start in the repository root with JDK 17+, Maven and Python 3.12:
+
+```sh
+mvn -B verify
+python3 scripts/package.py --jar target/revisitledger-0.1.0.jar
+```
+
+The first Maven build downloads the pinned dependencies. Packaging verifies their
+locked hashes and creates dist/revisitledger-0.1.0.zip. See the full verification
+commands below before using your build.
+
 ## Run the included example
 
-Extract the distribution ZIP and run these commands from the extracted directory.
-The distribution includes the application and all pinned runtime dependencies.
-It needs a Java runtime; class files target Java 17. Linux x86-64/OpenJDK 21 is the
-measured environment. Java 17 runtime and other operating systems are unverified.
-No Maven, Python, network connection or dependency download is needed to run it.
+Extract your generated distribution ZIP and run these commands from its
+revisitledger directory. The distribution includes the application and all pinned
+runtime dependencies. It needs a Java runtime; class files target Java 17.
+The complete hosted verification suite passes on Linux x86-64 with Temurin 17 and
+21. Other operating systems remain unverified; see [validation](docs/VALIDATION.md).
+No Maven, Python, network connection or dependency download is needed to run the
+already-built distribution.
 
 ```sh
 chmod +x bin/revisit-ledger  # Needed if your ZIP extractor drops executable bits.
