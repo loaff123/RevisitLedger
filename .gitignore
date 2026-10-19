@@ -1,0 +1,7 @@
+/target/
+/tooling/
+__pycache__/
+*.pyc
+/dist/
+/qualification-inputs/
+/qualification-results.json

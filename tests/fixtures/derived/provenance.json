@@ -1,0 +1,199 @@
+{
+  "extraction": "ast.parse; ast.literal_eval of exactly five named top-level string literals; UTF-8 encoding; no import or execution",
+  "files": [
+    {
+      "byte_length": 554,
+      "fixture": "derived/chunked-response.warc",
+      "modifications": [
+        {
+          "authorship": "Independently serialized RevisitLedger test case; no warcio or jwarc writer used.",
+          "details": "chunked-response; payload entity is fixed known bytes; WARC and block digests computed with Python hashlib."
+        }
+      ],
+      "sha256": "805c94c3482dcc772cbf118f84f3b640d9f2920ff13c8fd2c9a85663ec55cb2d",
+      "source_blob_sha": null,
+      "source_commit": null,
+      "source_kind": "independently_authored",
+      "source_script": "verification/extract_fixtures.py",
+      "source_url": null,
+      "symbol": null
+    },
+    {
+      "byte_length": 461,
+      "fixture": "derived/closed-pair/response.warc",
+      "modifications": [
+        {
+          "header": "WARC-Record-ID",
+          "new_value": "<urn:uuid:00000000-0000-4000-8000-000000000101>"
+        },
+        {
+          "header": "WARC-Target-URI",
+          "new_value": "http://example.com/foo"
+        },
+        {
+          "header": "WARC-Date",
+          "new_value": "1999-01-01T00:00:00Z"
+        }
+      ],
+      "sha256": "b4f64f9183d44ec99d5583b1ef0b2df8650628a54687d541a89ea148d5e2efd0",
+      "source_blob_sha": "597c24f9d4f3f407de165f3357457f13fe69d74f",
+      "source_commit": "2a797aa8c6d67e70966ce9d1a690208ab250fbe7",
+      "source_url": "https://github.com/webrecorder/warcio/blob/2a797aa8c6d67e70966ce9d1a690208ab250fbe7/test/test_writer.py",
+      "symbol": "RESPONSE_RECORD"
+    },
+    {
+      "byte_length": 533,
+      "fixture": "derived/closed-pair/revisit.warc",
+      "modifications": [
+        {
+          "header": "WARC-Record-ID",
+          "new_value": "<urn:uuid:00000000-0000-4000-8000-000000000102>"
+        }
+      ],
+      "sha256": "a358aa0931f56010aa800850dd99dcdca240bc6bee1bb0564ac44e95b43a7f46",
+      "source_blob_sha": "597c24f9d4f3f407de165f3357457f13fe69d74f",
+      "source_commit": "2a797aa8c6d67e70966ce9d1a690208ab250fbe7",
+      "source_url": "https://github.com/webrecorder/warcio/blob/2a797aa8c6d67e70966ce9d1a690208ab250fbe7/test/test_writer.py",
+      "symbol": "REVISIT_RECORD_1"
+    },
+    {
+      "byte_length": 29,
+      "fixture": "derived/content-encoded-entity.bin",
+      "modifications": [
+        {
+          "authorship": "Fixed independently authored gzip entity bytes; no platform recompression.",
+          "decoded_entity_hex": "736f6d650a74657874"
+        }
+      ],
+      "sha256": "fb0bd9c637526215c2b2b5949ec0a9b85e072b086840e9900115f2b131d14817",
+      "source_blob_sha": null,
+      "source_commit": null,
+      "source_kind": "independently_authored",
+      "source_script": "verification/extract_fixtures.py",
+      "source_url": null,
+      "symbol": null
+    },
+    {
+      "byte_length": 504,
+      "fixture": "derived/content-encoded-response.warc",
+      "modifications": [
+        {
+          "authorship": "Independently serialized RevisitLedger test case; no warcio or jwarc writer used.",
+          "details": "content-encoded-response; payload entity is fixed known bytes; WARC and block digests computed with Python hashlib."
+        }
+      ],
+      "sha256": "8cf1d6d41f6836f9d40cdc554a950880f0c11724c56ac484ae05772c591e59dc",
+      "source_blob_sha": null,
+      "source_commit": null,
+      "source_kind": "independently_authored",
+      "source_script": "verification/extract_fixtures.py",
+      "source_url": null,
+      "symbol": null
+    },
+    {
+      "byte_length": 617,
+      "fixture": "derived/header-only-revisit.warc",
+      "modifications": [
+        {
+          "authorship": "Independently serialized RevisitLedger test case; no warcio or jwarc writer used.",
+          "details": "header-only-revisit; payload entity is fixed known bytes; WARC and block digests computed with Python hashlib."
+        }
+      ],
+      "sha256": "0f6a94bfe23cd1c340ac07b6758c7ffe5ff24c094316c08a8c4e3030a1087a59",
+      "source_blob_sha": null,
+      "source_commit": null,
+      "source_kind": "independently_authored",
+      "source_script": "verification/extract_fixtures.py",
+      "source_url": null,
+      "symbol": null
+    },
+    {
+      "byte_length": 597,
+      "fixture": "derived/whole-file/A.warc",
+      "modifications": [
+        {
+          "header_changes": {
+            "WARC-Date": "2001-01-01T00:00:00Z",
+            "WARC-Record-ID": "<urn:uuid:00000000-0000-4000-8000-000000000201>",
+            "WARC-Refers-To": "<urn:uuid:00000000-0000-4000-8000-000000000202>",
+            "WARC-Refers-To-Date": "1999-01-01T00:00:00Z",
+            "WARC-Refers-To-Target-URI": "http://example.com/b",
+            "WARC-Target-URI": "http://example.com/a"
+          },
+          "record_ordinal": 1,
+          "source_symbol": "REVISIT_RECORD_1"
+        }
+      ],
+      "sha256": "b8517cefe711b5d858f9dc70882de1b0405f22ea889de4246709238358f2b39f",
+      "source_blob_sha": "597c24f9d4f3f407de165f3357457f13fe69d74f",
+      "source_commit": "2a797aa8c6d67e70966ce9d1a690208ab250fbe7",
+      "source_url": "https://github.com/webrecorder/warcio/blob/2a797aa8c6d67e70966ce9d1a690208ab250fbe7/test/test_writer.py",
+      "symbol": [
+        "REVISIT_RECORD_1"
+      ]
+    },
+    {
+      "byte_length": 1153,
+      "fixture": "derived/whole-file/B.warc",
+      "modifications": [
+        {
+          "header_changes": {
+            "WARC-Date": "1999-01-01T00:00:00Z",
+            "WARC-Record-ID": "<urn:uuid:00000000-0000-4000-8000-000000000202>",
+            "WARC-Target-URI": "http://example.com/b"
+          },
+          "record_ordinal": 1,
+          "source_symbol": "RESPONSE_RECORD"
+        },
+        {
+          "header_changes": {
+            "WARC-Date": "2002-01-01T00:00:00Z",
+            "WARC-Record-ID": "<urn:uuid:00000000-0000-4000-8000-000000000203>",
+            "WARC-Refers-To": "<urn:uuid:00000000-0000-4000-8000-000000000204>",
+            "WARC-Refers-To-Date": "1998-01-01T00:00:00Z",
+            "WARC-Refers-To-Target-URI": "http://example.com/c",
+            "WARC-Target-URI": "http://example.com/unrelated"
+          },
+          "record_ordinal": 2,
+          "source_symbol": "REVISIT_RECORD_2"
+        }
+      ],
+      "sha256": "16f1e58cae9a31c1d899ce92027c153252f3478b2f5ebab3e9458cd07c7e0779",
+      "source_blob_sha": "597c24f9d4f3f407de165f3357457f13fe69d74f",
+      "source_commit": "2a797aa8c6d67e70966ce9d1a690208ab250fbe7",
+      "source_url": "https://github.com/webrecorder/warcio/blob/2a797aa8c6d67e70966ce9d1a690208ab250fbe7/test/test_writer.py",
+      "symbol": [
+        "RESPONSE_RECORD",
+        "REVISIT_RECORD_2"
+      ]
+    },
+    {
+      "byte_length": 459,
+      "fixture": "derived/whole-file/C.warc",
+      "modifications": [
+        {
+          "header_changes": {
+            "WARC-Date": "1998-01-01T00:00:00Z",
+            "WARC-Record-ID": "<urn:uuid:00000000-0000-4000-8000-000000000204>",
+            "WARC-Target-URI": "http://example.com/c"
+          },
+          "record_ordinal": 1,
+          "source_symbol": "RESPONSE_RECORD"
+        }
+      ],
+      "sha256": "045c02af80af53f52ab93cd6c5280f39b93f9455d92fe1f9f8495e753aecfca1",
+      "source_blob_sha": "597c24f9d4f3f407de165f3357457f13fe69d74f",
+      "source_commit": "2a797aa8c6d67e70966ce9d1a690208ab250fbe7",
+      "source_url": "https://github.com/webrecorder/warcio/blob/2a797aa8c6d67e70966ce9d1a690208ab250fbe7/test/test_writer.py",
+      "symbol": [
+        "RESPONSE_RECORD"
+      ]
+    }
+  ],
+  "fixture_kind": "authored upstream conformance inputs and separately labeled derivatives; not a production crawl",
+  "schema_version": 1,
+  "source_blob_sha": "597c24f9d4f3f407de165f3357457f13fe69d74f",
+  "source_byte_length": 29742,
+  "source_commit": "2a797aa8c6d67e70966ce9d1a690208ab250fbe7",
+  "source_sha256": "e23bdd509a28ee14cf73e294456e77decbc8cc80d663e93ddce722447e8ec430"
+}

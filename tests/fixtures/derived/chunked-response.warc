@@ -1,0 +1,25 @@
+WARC/1.1
+WARC-Type: response
+WARC-Record-ID: <urn:uuid:00000000-0000-4000-8000-000000000301>
+WARC-Target-URI: http://example.com/chunked-response
+WARC-Date: 2000-01-01T00:00:00Z
+WARC-Payload-Digest: sha1:B6QJ6BNJ3R4B23XXMRKZKHLPGJY2VE4O
+WARC-Block-Digest: sha1:B4SXI5KIZGLZSSH6WPUDAWJ724QRH5DA
+Content-Type: application/http; msgtype=response
+Content-Length: 176
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Transfer-Encoding: chunked
+Trailer: X-Checksum
+
+4;name=one
+some
+5;quoted="two words"
+
+text
+0;done=yes
+X-Checksum: ignored
+
+
+

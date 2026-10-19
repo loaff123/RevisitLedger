@@ -1,0 +1,19 @@
+WARC/1.1
+WARC-Type: revisit
+WARC-Record-ID: <urn:uuid:00000000-0000-4000-8000-000000000303>
+WARC-Target-URI: http://example.com/header-only-revisit
+WARC-Date: 2000-01-01T00:00:00Z
+WARC-Profile: http://netpreserve.org/warc/1.1/revisit/identical-payload-digest
+WARC-Refers-To-Target-URI: http://example.com/foo
+WARC-Refers-To-Date: 1999-01-01T00:00:00Z
+WARC-Payload-Digest: sha1:B6QJ6BNJ3R4B23XXMRKZKHLPGJY2VE4O
+WARC-Block-Digest: sha1:J6QSWZ3GGZ32VL5E45C3DP3L4T33BCL3
+Content-Type: application/http; msgtype=response
+Content-Length: 64
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-Length: 9
+
+
+

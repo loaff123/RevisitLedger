@@ -1,0 +1,35 @@
+RevisitLedger 0.1.0
+Original project code: MIT License. Copyright 2026 RevisitLedger contributors.
+The project license does not replace the licenses of the materials below.
+
+Authored upstream WARC test literals are from warcio, Apache License 2.0.
+Unchanged upstream LICENSE and NOTICE are in tests/fixtures/upstream-warcio/.
+Their pinned origin and exact hashes are in that directory's provenance.json.
+Changes to derived fixtures are listed in tests/fixtures/derived/NOTICE and
+provenance.json. No captured web pages or production crawl content is included.
+
+jwarc 0.37.0 is Apache License 2.0, copyright National Library of Australia
+and the jwarc contributors. Its LICENSE was retrieved at tag v0.37.0;
+that tag has no top-level NOTICE file. No jwarc source was modified.
+
+Apache Commons Compress 1.28.0, Codec 1.23.0, IO 2.22.0, and Lang 3.21.0
+are Apache License 2.0. Their original license and notice files are included
+under third-party-notices/. Runtime dependency JARs are unmodified.
+
+SQLite JDBC 3.53.4.0 is included unchanged as the disk-index runtime dependency.
+Its Apache-2.0 LICENSE, BSD-2-Clause LICENSE.zentus, and upstream release-tag
+NOTICE are in third-party-notices/. SQLite itself is public domain. The JAR
+includes platform-specific native SQLite libraries. No SQLite or driver source
+was modified. Its SHA-256 is
+bcb1f51e36f940867e83342f9efbf5968ac44a6bef4d397bb4af7b17b45cd2fb.
+
+JUnit and other test dependencies retain their own licenses and notices in
+third-party-notices/. They are needed to build/test source but are not bundled
+as runtime JARs. warcio 1.8.1 and six 1.17.0 are optional Python comparator
+dependencies; the Python packages are not bundled. Their original notices
+are included. dependency-lock.json records exact acquired Maven/Python bytes;
+runtime-dependencies.json in the distribution lists the bundled runtime graph.
+
+Build toolchains, artifact caches and machine-specific configuration are not
+included. source-manifest.json and distribution-manifest.json describe the
+exact source and distribution file bytes respectively.

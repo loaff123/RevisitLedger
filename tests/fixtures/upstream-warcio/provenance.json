@@ -1,0 +1,81 @@
+{
+  "extraction": "ast.parse; ast.literal_eval of exactly five named top-level string literals; UTF-8 encoding; no import or execution",
+  "files": [
+    {
+      "byte_length": 10125,
+      "fixture": "upstream-warcio/LICENSE",
+      "modifications": [],
+      "sha256": "a428ab27f0cf20f5b887af1385ab2c7a9d6881936fa7bea4015feae5eb8cfd91",
+      "source_blob_sha": "d3cdba059785ad8554c12c170dfddc7bc0484886",
+      "source_commit": "2a797aa8c6d67e70966ce9d1a690208ab250fbe7",
+      "source_url": "https://github.com/webrecorder/warcio/blob/2a797aa8c6d67e70966ce9d1a690208ab250fbe7/LICENSE",
+      "symbol": null
+    },
+    {
+      "byte_length": 173,
+      "fixture": "upstream-warcio/NOTICE",
+      "modifications": [],
+      "sha256": "91b3105745a3a5b434c8040e9df47219b0710b26228d2550992bd8b090ed56a8",
+      "source_blob_sha": "17b221238ad855fce8f47b0b239b4ff16c9ba4f2",
+      "source_commit": "2a797aa8c6d67e70966ce9d1a690208ab250fbe7",
+      "source_url": "https://github.com/webrecorder/warcio/blob/2a797aa8c6d67e70966ce9d1a690208ab250fbe7/NOTICE",
+      "symbol": null
+    },
+    {
+      "byte_length": 344,
+      "fixture": "upstream-warcio/RESOURCE_RECORD.warc",
+      "modifications": [],
+      "sha256": "447d4d3602c9fbd731690fe3b74543b818cc1db9e7c57fc1d85dfe8399e78041",
+      "source_blob_sha": "597c24f9d4f3f407de165f3357457f13fe69d74f",
+      "source_commit": "2a797aa8c6d67e70966ce9d1a690208ab250fbe7",
+      "source_url": "https://github.com/webrecorder/warcio/blob/2a797aa8c6d67e70966ce9d1a690208ab250fbe7/test/test_writer.py",
+      "symbol": "RESOURCE_RECORD"
+    },
+    {
+      "byte_length": 458,
+      "fixture": "upstream-warcio/RESPONSE_RECORD.warc",
+      "modifications": [],
+      "sha256": "2face319bb3dd9adbd018cce20f8bbc7c8e023b6334e34021c1377b26b44765e",
+      "source_blob_sha": "597c24f9d4f3f407de165f3357457f13fe69d74f",
+      "source_commit": "2a797aa8c6d67e70966ce9d1a690208ab250fbe7",
+      "source_url": "https://github.com/webrecorder/warcio/blob/2a797aa8c6d67e70966ce9d1a690208ab250fbe7/test/test_writer.py",
+      "symbol": "RESPONSE_RECORD"
+    },
+    {
+      "byte_length": 533,
+      "fixture": "upstream-warcio/REVISIT_RECORD_1.warc",
+      "modifications": [],
+      "sha256": "95364f58dd2f0f3877511ab998bd94693cba890548ec16a0c92d7e59df701b37",
+      "source_blob_sha": "597c24f9d4f3f407de165f3357457f13fe69d74f",
+      "source_commit": "2a797aa8c6d67e70966ce9d1a690208ab250fbe7",
+      "source_url": "https://github.com/webrecorder/warcio/blob/2a797aa8c6d67e70966ce9d1a690208ab250fbe7/test/test_writer.py",
+      "symbol": "REVISIT_RECORD_1"
+    },
+    {
+      "byte_length": 622,
+      "fixture": "upstream-warcio/REVISIT_RECORD_2.warc",
+      "modifications": [],
+      "sha256": "d4aeac98ee08596efe0beafc0d3fd15f3911eb25ee3b93c398be73487fd129ba",
+      "source_blob_sha": "597c24f9d4f3f407de165f3357457f13fe69d74f",
+      "source_commit": "2a797aa8c6d67e70966ce9d1a690208ab250fbe7",
+      "source_url": "https://github.com/webrecorder/warcio/blob/2a797aa8c6d67e70966ce9d1a690208ab250fbe7/test/test_writer.py",
+      "symbol": "REVISIT_RECORD_2"
+    },
+    {
+      "byte_length": 540,
+      "fixture": "upstream-warcio/REVISIT_RECORD_3.warc",
+      "modifications": [],
+      "sha256": "f6875dc51078bbc07c584d0ae970e12c93089529397e9a851ac4162377a1d05b",
+      "source_blob_sha": "597c24f9d4f3f407de165f3357457f13fe69d74f",
+      "source_commit": "2a797aa8c6d67e70966ce9d1a690208ab250fbe7",
+      "source_url": "https://github.com/webrecorder/warcio/blob/2a797aa8c6d67e70966ce9d1a690208ab250fbe7/test/test_writer.py",
+      "symbol": "REVISIT_RECORD_3"
+    }
+  ],
+  "fixture_kind": "authored upstream conformance inputs and separately labeled derivatives; not a production crawl",
+  "schema_version": 1,
+  "source_blob_sha": "597c24f9d4f3f407de165f3357457f13fe69d74f",
+  "source_byte_length": 29742,
+  "source_commit": "2a797aa8c6d67e70966ce9d1a690208ab250fbe7",
+  "source_sha256": "e23bdd509a28ee14cf73e294456e77decbc8cc80d663e93ddce722447e8ec430"
+}

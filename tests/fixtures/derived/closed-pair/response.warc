@@ -1,0 +1,17 @@
+WARC/1.0
+WARC-Type: response
+WARC-Record-ID: <urn:uuid:00000000-0000-4000-8000-000000000101>
+WARC-Target-URI: http://example.com/foo
+WARC-Date: 1999-01-01T00:00:00Z
+WARC-Payload-Digest: sha1:B6QJ6BNJ3R4B23XXMRKZKHLPGJY2VE4O
+WARC-Block-Digest: sha1:OS3OKGCWQIJOAOC3PKXQOQFD52NECQ74
+Content-Type: application/http; msgtype=response
+Content-Length: 97
+
+HTTP/1.0 200 OK
+Content-Type: text/plain; charset="UTF-8"
+Custom-Header: somevalue
+
+some
+text
+

@@ -1,0 +1,37 @@
+WARC/1.0
+WARC-Type: response
+WARC-Record-ID: <urn:uuid:00000000-0000-4000-8000-000000000202>
+WARC-Target-URI: http://example.com/b
+WARC-Date: 1999-01-01T00:00:00Z
+WARC-Payload-Digest: sha1:B6QJ6BNJ3R4B23XXMRKZKHLPGJY2VE4O
+WARC-Block-Digest: sha1:OS3OKGCWQIJOAOC3PKXQOQFD52NECQ74
+Content-Type: application/http; msgtype=response
+Content-Length: 97
+
+HTTP/1.0 200 OK
+Content-Type: text/plain; charset="UTF-8"
+Custom-Header: somevalue
+
+some
+text
+
+WARC/1.0
+WARC-Type: revisit
+WARC-Record-ID: <urn:uuid:00000000-0000-4000-8000-000000000203>
+WARC-Target-URI: http://example.com/unrelated
+WARC-Date: 2002-01-01T00:00:00Z
+WARC-Profile: http://netpreserve.org/warc/1.0/revisit/identical-payload-digest
+WARC-Refers-To-Target-URI: http://example.com/c
+WARC-Refers-To-Date: 1998-01-01T00:00:00Z
+WARC-Payload-Digest: sha1:B6QJ6BNJ3R4B23XXMRKZKHLPGJY2VE4O
+WARC-Block-Digest: sha1:A6J5UTI2QHHCZFCFNHQHCDD3JJFKP53V
+Content-Type: application/http; msgtype=response
+Content-Length: 88
+WARC-Refers-To: <urn:uuid:00000000-0000-4000-8000-000000000204>
+
+HTTP/1.0 200 OK
+Content-Type: text/plain; charset="UTF-8"
+Custom-Header: somevalue
+
+
+

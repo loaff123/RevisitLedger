@@ -1,0 +1,29 @@
+name: verify
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  test:
+    strategy:
+      matrix:
+        java: ['17', '21']
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: ${{ matrix.java }}
+          cache: maven
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: mvn -B verify
+      - run: python3 -m unittest discover -s verification -p 'test_*.py' -v
+      - run: python3 verification/known_bytes.py --check
+      - run: python3 verification/project_expectations.py --check
+      - run: python3 verification/graph_oracle.py --check
+      - run: python3 scripts/package.py --jar target/revisitledger-0.1.0.jar
+      - run: python3 verification/package_checks.py

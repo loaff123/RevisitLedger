@@ -1,0 +1,13 @@
+Warcio
+Copyright 2017-2020 Webrecorder Software LLC, Rhizome, and Contributors.
+Authored by Ilya Kreymer
+
+Distributed under the Apache License 2.0.
+See LICENSE for details.
+
+RevisitLedger fixture modifications, 2026-10-17:
+closed-pair and whole-file fixtures modify the named authored warcio literals.
+Every modified header and source symbol is listed in provenance.json.
+The original HTTP blocks, payloads and block digests in those derivatives remain unchanged.
+chunked-response, content-encoded-response and header-only-revisit were independently serialized for this gate.
+The unchanged upstream Apache-2.0 LICENSE is in ../upstream-warcio/LICENSE.
